@@ -6,6 +6,10 @@ language: swift
 install:
   - rm Gemfile.lock
   - bundle install
+addons:
+  sauce_connect:
+    username: "Jordan-Earnin"
+    access_key: "8b775c04-d4da-475d-9fc8-6d4db6c8de7b"
 env:
   - TEST_SUITE=TravisUITests/TravisUITests
   - TEST_SUITE=TravisUITests2/TravisUITests2
